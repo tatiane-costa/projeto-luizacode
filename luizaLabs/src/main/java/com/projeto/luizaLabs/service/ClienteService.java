@@ -13,26 +13,29 @@ public class ClienteService {
     @Autowired
     private ClienteRepository clienteRepository;
 
-    //Criar um cliente
+   
     public Cliente adicionarCliente(Cliente cliente){
         return clienteRepository.save(cliente);
     }
 
-    //Mostrar um cliente
+    
     public Optional<Cliente> buscarCliente(long id)
     {
-        return clienteRepository.findByID(id);
+        return clienteRepository.findById(id);
     }
 
-    //Atualizar dados do cliente
+ 
     public Cliente atualizarCliente(Cliente cliente)
     {
         return clienteRepository.save(cliente);
     }
 
-    //contar quantos clientes tem
     public long quantidadeDeClientes(){
         return clienteRepository.count();
+    }
+
+    public Optional<Cliente> findById(Long id) {
+        return clienteRepository.findById(id);
     }
 
 }

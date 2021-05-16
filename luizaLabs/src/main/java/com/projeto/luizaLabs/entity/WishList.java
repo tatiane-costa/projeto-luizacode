@@ -19,12 +19,10 @@ public class WishList  implements Serializable {
     private Cliente cliente;
 
     @OneToMany
-    @JoinColumn(name = "idProduto")
+    @Column(name = "idProduto")
     private List<Produto> produto;
 
-
     //Getter and Setter
-
 
     public Long getId() {
         return Id;

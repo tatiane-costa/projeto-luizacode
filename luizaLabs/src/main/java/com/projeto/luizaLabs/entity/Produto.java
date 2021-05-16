@@ -15,7 +15,7 @@ public class Produto  implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private long ID;
+    private Long ID;
 
     @NotNull
     @Column(name = "nome")
@@ -33,8 +33,7 @@ public class Produto  implements Serializable {
 
     //Getter and Setter
 
-
-    public long getID() {
+    public Long getID() {
         return ID;
     }
 
