@@ -13,8 +13,8 @@ import java.util.List;
 public interface WishListRepository extends JpaRepository<WishList, Long> {
 
     WishList findById(long id);
-    //List<WishList> listaProdutos(Produto produto);
-
-    //WishList buscarClienteWishlist(Cliente cliente);
-    //WishList buscarProdutoWishlist(Produto produto);
+    //List<WishList> listaProdutos(WishList produto);
+    //o property listaProdutos found for type WishList!
+    //WishList adicionarProdutosNaWishList(WishList produto);
+    //WishList buscarProdutosNaWishList(WishList cliente);
 }

@@ -1,7 +1,10 @@
 package com.projeto.luizaLabs.entity;
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.*;
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.List;
 
 @Entity
@@ -22,7 +25,19 @@ public class WishList  implements Serializable {
     @Column(name = "idProduto")
     private List<Produto> produto;
 
+    @NotNull
+    @Column(name = "total")
+    private BigDecimal total;
+
     //Getter and Setter
+
+    public BigDecimal getTotal() {
+        return total;
+    }
+
+    public void setTotal(BigDecimal total) {
+        this.total = total;
+    }
 
     public Long getId() {
         return Id;

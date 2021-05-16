@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-//@RequestMapping("/api")
+@RequestMapping("/api")
 public class WishListController {
 
     @Autowired
@@ -93,14 +93,14 @@ public class WishListController {
 //        try {
 //            Optional<WishList> wishlistPosBusca = wishlistService.buscarWishListId(id);
 //            if (wishlistPosBusca.isPresent()) {
-//                wishList.setId(wishlistPosBusca.get().getId());
-//                return new ResponseEntity<>(wishlistService.atualizarWishList(wishList), HttpStatus.NOT_FOUND);
-//            }
-//            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-//        } catch (Exception e) {
-//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-//
-//        }
+//                wishList.setId(wishlistPosBusca       return new ResponseEntity<>(wishlistService.atualizarWishList(wishList), HttpStatus.NOT_FOUND);
+////            }
+////            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+////        } catch (Exception e) {
+////            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+////
+////        }
+////.get().getId());
 //
 //    }
 

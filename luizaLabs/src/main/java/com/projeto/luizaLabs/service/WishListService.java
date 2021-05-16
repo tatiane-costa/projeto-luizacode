@@ -4,6 +4,7 @@ import com.projeto.luizaLabs.entity.Cliente;
 import com.projeto.luizaLabs.entity.Produto;
 import com.projeto.luizaLabs.entity.WishList;
 import com.projeto.luizaLabs.repository.WishListRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,13 +12,14 @@ import java.util.List;
 @Service
 public class WishListService {
 
+    @Autowired
     private WishListRepository wishListRepository;
 
     //Adicionar a lista no banco
     public WishList adicionarProdutosNaWishList(WishList wishlist){
         return wishListRepository.save(wishlist);
     }
-    //Buscar produtos na WishList
+    //Buscar produto na WishList
     public WishList buscarProdutosNaWishList(long id) {
         return wishListRepository.findById(id);
     }
@@ -28,10 +30,6 @@ public class WishListService {
 //    }
 
 
-//    //Buscar cliente no banco
-//    public WishList buscarClienteWishlist(long id_cliente){
-//        return  wishListRepository.findById(id_cliente);
-//    }
 
 
 
