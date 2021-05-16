@@ -15,7 +15,7 @@ public class LuizaLabsApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(){
 		return args ->{
-			System.out.println("-------- It´s alive, baby --------");
+			System.out.println("-------- TRAVA NA BELEZAAAAAA --------");
 		};
 	}
 }
