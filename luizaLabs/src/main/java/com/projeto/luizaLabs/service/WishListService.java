@@ -19,22 +19,23 @@ public class WishListService {
     public WishList adicionarProdutosNaWishList(WishList wishlist){
         return wishListRepository.save(wishlist);
     }
-    //Buscar produto na WishList
-    public WishList buscarProdutosNaWishList(long id) {
+
+    //Buscar WishList
+    public WishList buscarWishList(long id) {
         return wishListRepository.findById(id);
     }
+
+    //Buscar produto na WishList
+    /*public Produto buscarProdutosNaWishList(long idCliente, long idProduto) {
+        return wishListRepository.buscarProdutoWishList(idCliente, idProduto);
+    }*/
 
     //Visualizar produtos na wishlist
 //    public List<WishList> visualizarProdutosNaWishList(Produto produto) {
 //        return wishListRepository.findAll();
 //    }
 
-
-
-
-
 //    public WishList atualizarProdutoWishList(Object object) {
 //        return wishListRepository.save((WishList) object);
 //    }
-
 }
